@@ -34,9 +34,10 @@ Este projeto compõe parte da **nota do semestre**.
 ## ⚙️ Tecnologias Utilizadas
 
 - **ESP32 DevKit V1**
-- **Sensor capacitivo de umidade do solo**
-- **Módulo relé 5V**
+- **Sensor resistivo de umidade do solo**
+- **Módulo relé 5VDA 250VCA**
 - **Arduino IDE**
+- **Valvula Solenoide 127VAC**
 
 ---
 
@@ -44,21 +45,27 @@ Este projeto compõe parte da **nota do semestre**.
 
 | Sensor de Umidade | ESP32        |
 |-------------------|--------------|
-| VCC               | 3.3V ou 5V * |
+| VCC               | 3.3V         |
 | GND               | GND          |
 | A0 (analógico)    | GPIO 35      |
 | D0 (digital)      | (Não usado)  |
 
 \* ⚠️ Atenção: Se o sensor for alimentado em 5V, verificar se a saída A0 não excede 3.3V. Usar divisor resistivo se necessário.
 
-| Módulo Relé | ESP32   |
+| Módulo Relé | ESP32    |
 |--------------|---------|
-| VCC          | 3.3V ou 5V |
+| VCC          | 5V      |
 | GND          | GND     |
 | IN           | GPIO 5  |
 
 ---
 
+| Válvula Sólenoide | Módulo Relé | ALIMENTAÇÃO |
+--------------------|-------------|-------------|
+|        VCC        |     --      |     FASE    |
+|        GND        |     COM     |             |
+|       --          |      NO     |    NEUTRO   |
+---
 ## 📜 Código Fonte
 
 O código está no arquivo `irrigacao_esp32.ino`.
