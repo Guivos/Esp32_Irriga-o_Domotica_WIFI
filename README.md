@@ -1,20 +1,20 @@
-# 🌱 Sistema de Irrigação Automatizada com ESP32
+# Sistema de Irrigação Automatizada com ESP32
 
-### 💻 Projeto Acadêmico — Automação Domótica  
+### Projeto Acadêmico — Automação Domótica  
 **IFSP — Campus Bragança Paulista (BRA)**  
 **5º Semestre de Engenharia de Controle e Automação**  
 
 ---
 
-## 📝 Descrição
+## Descrição
 
-Este projeto consiste em um sistema de irrigação automática utilizando um microcontrolador **ESP32**, um **sensor de umidade do solo capacitivo** e um **relé** para simular o controle de uma bomba d'água ou válvula de irrigação.
+Este projeto consiste em um sistema de irrigação automática utilizando um microcontrolador **ESP32**, um **sensor de umidade do solo Resistivo** e um **relé** para o controle de  válvula Solenoide de irrigação.
 
-O sistema mede continuamente a umidade do solo e, através de um controle baseado em **histerese**, aciona ou desliga o irrigador conforme os níveis de umidade definidos.
+O sistema mede continuamente a umidade do solo e, através de um controle baseado em **histerese**, aciona ou desliga o irrigador conforme os níveis de umidade definidos pelo software e usuario.
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Desenvolver um sistema inteligente de automação residencial, como parte da avaliação da disciplina de **Automação Domótica**, no **5º semestre** do curso de **Engenharia de Controle e Automação** no **Instituto Federal de São Paulo — IFSP (Campus BRA)**.
 
@@ -22,7 +22,7 @@ Este projeto compõe parte da **nota do semestre**.
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Leitura de umidade do solo via sensor capacitivo.
 - Acionamento automático de um relé (simulando bomba ou válvula de irrigação).
@@ -31,7 +31,7 @@ Este projeto compõe parte da **nota do semestre**.
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **ESP32 DevKit V1**
 - **Sensor resistivo de umidade do solo**
@@ -41,7 +41,7 @@ Este projeto compõe parte da **nota do semestre**.
 
 ---
 
-## 🔗 Conexões do Hardware
+## Conexões do Hardware
 
 | Sensor de Umidade | ESP32        |
 |-------------------|--------------|
@@ -66,7 +66,7 @@ Este projeto compõe parte da **nota do semestre**.
 |        GND        |     COM     |             |
 |       --          |      NO     |    NEUTRO   |
 ---
-## 📜 Código Fonte
+## Código Fonte
 
 O código está no arquivo `irrigacao_esp32.ino`.
 
