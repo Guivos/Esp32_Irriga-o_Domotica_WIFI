@@ -177,12 +177,6 @@ Repositório: https://github.com/RMDomingos20/Esp32_Irriga-o_Domotica.git
 
 ---
 
-## Licença
-
-Este projeto é de uso acadêmico e está licenciado sob a MIT License.
-
----
-
 ## Referências
 
 - ESPRESSIF SYSTEMS. ESP32 Datasheet.  
