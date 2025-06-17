@@ -80,3 +80,26 @@ float LIMIAR_DESLIGAR = 40.0;
 // Calibração ADC
 int seco = 4095;    // Valor quando o solo está seco
 int molhado = 1400; // Valor quando o solo está bem molhado
+```
+
+### Compatibilidade de Bibliotecas e Correção de Erros
+
+Durante o desenvolvimento, foi identificado um problema de compatibilidade relacionado à biblioteca **`ESPAsyncWebServer`** ao utilizar o **core ESP32 versão 3.2.0** (ou superior). O erro reportado durante a compilação foi:
+
+    error: call of overloaded 'IPAddress(unsigned int)' is ambiguous
+
+ **Solução aplicada:**  
+O problema ocorre devido à ambiguidade no construtor da classe `IPAddress` nas versões mais recentes do core ESP32. Para resolver, foi necessário editar o arquivo:
+
+    /Arduino/libraries/ESP_Async_WebServer/src/AsyncWebSocket.cpp
+
+
+Na linha correspondente (aproximadamente linha 844), a seguinte alteração foi feita:
+
+```cpp
+// Antes (com erro)
+return IPAddress(0U);
+
+// Depois (corrigido)
+return IPAddress((uint32_t)0);
+```
