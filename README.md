@@ -39,7 +39,7 @@ Desenvolver um sistema inteligente de automação residencial como parte da aval
 - Sensor: Umidade do Solo Resistivo
 - Atuador: Módulo Relé 5VDC
 - Dispositivo Controlado: Válvula Solenoide 127V (Normalmente Fechada)
-- Interface Web: HTML, CSS e JavaScript rodando no próprio ESP32
+- Interface Web: HTML e JavaScript rodando no próprio ESP32
 - Conectividade: Wi-Fi (rede local)
 
 ---
