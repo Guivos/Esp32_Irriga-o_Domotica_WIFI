@@ -152,11 +152,13 @@ return IPAddress((uint32_t)0);
 ## Organização do Projeto
 
 ```
-├── irrigacao_esp32.ino         # Código Sem WIFI
-├── irrigacao_esp32.ino         # Código principal com WIFI
+├── irrigacao_esp32.ino         # Código Sem WIFI.
+├── irrigacao_esp32.ino         # Código principal com WIFI.
 ├── drivers
 │   └──[...]                    # Drivers necessarios para funcionar a interface.
-├── README.md                   # Este documento
+├── Trabalho Teorico
+│   └──Trabalho Irrigação       # Teoria Documentada do trabalho.
+├── README.md                   # Este documento.
 ```
 
 ---
